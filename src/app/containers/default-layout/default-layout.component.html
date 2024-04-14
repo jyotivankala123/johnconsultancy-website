@@ -1,0 +1,205 @@
+<style type="text/css">
+
+  /* ============ only desktop view ============ */
+  @media all and (min-width: 992px) {
+    .navbar .dropdown-menu-end{ right:0; left: auto;  }
+    .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+    .navbar .nav-item:hover .nav-link{ color: #000;  }
+    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+    .navbar .dropdown-menu.fade-up{ top:180%;  }
+    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+  }	
+  /* ============ desktop view .end// ============ */
+  
+  </style>
+<header >
+  <div class="top_header">
+    <div class="container">
+      <div class="top_header_inside">
+        <div class="logo_area">
+          <img src="assets/images/logo.svg" style="cursor: pointer;" lt="" />
+        </div>
+
+        <div class="mid_area" >
+          <div class="input-group border ">
+           
+            <div class="input-group-append border-0">
+              <button id="button-addon3" type="button" class="btn btn-link" ><i
+                  class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right_area" >
+          <div class="header_profile_secion">
+            <a *ngIf="fullName == ''" href="" onclick="event.preventDefault();" ><i
+                class="fas fa-user"></i>
+              Login / Signup</a>
+            <a *ngIf="fullName != ''" href="" onclick="event.preventDefault();"><i class="fas fa-user"></i>
+              {{fullName}}</a>
+            <div class="drop_area" >
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="" onclick="event.preventDefault();"
+                   ><img src="assets/images/profile_tab_icon1.svg" alt="" />Profile</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="" onclick="event.preventDefault();"
+                    (click)="navigateManageAddressList()"><img src="assets/images/profile_tab_icon4.svg" alt="" />Manage Delivery Location</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="" onclick="event.preventDefault();" (click)="navigateOrderList()"><img
+                      src="assets/images/profile_tab_icon5.svg" alt="" />Order</a>
+                </li> -->
+                <li class="nav-item">
+                  
+                </li>
+                <!-- <li class="nav-item">
+
+                  <a class="nav-link" *ngIf="unReadNotification > 0" href="" onclick="event.preventDefault();"
+                    (click)="navigateNotificationList()"><span
+                      class="notification_dot">{{unReadNotification}}</span><img
+                      src="assets/images/profile_tab_icon7.svg" alt="" />
+                    Notification</a>
+                  <a class="nav-link" *ngIf="unReadNotification == 0" href="" onclick="event.preventDefault();"
+                    (click)="navigateNotificationList()"><img src="assets/images/profile_tab_icon7.svg" alt="" />
+                    Notification</a>
+
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#logout" data-bs-toggle="modal"><img
+                      src="assets/images/profile_tab_icon8.svg" alt="" />Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <div *ngIf="fullName != ''" class="header_cart_secion">
+            <span class="position-absolute translate-middle badge rounded-pill bg-danger" *ngIf="noOfCartItem != 0 && noOfCartItem != ''" style="font-size: 8px; margin-top: -5px; margin-left: -2px;">
+              {{noOfCartItem}}
+              <span class="visually-hidden">unread messages</span>
+            </span>
+            <a href="" onclick="event.preventDefault();" (click)="addToCart()"><i class="fas fa-shopping-cart"></i> Cart</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="menu_section" *ngIf="showAdmin == false">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="" onclick="event.preventDefault();"
+                  [ngClass]="headerTab == 'Home' ? 'active' : ''" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" onclick="event.preventDefault();"
+                  [ngClass]="headerTab == 'About Us' ? 'active' : ''" >About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" onclick="event.preventDefault();"
+                  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+               [ngClass]="headerTab == 'Products' ? 'active' : ''">
+                  Products
+                </a>
+                <ul class="dropdown-menu fade-up" aria-labelledby="navbarDropdownMenuLink" id="projectDropDown">
+                  <li *ngFor="let category of productCategoryList">
+                    <a href=""  class="dropdown-item"
+                      data-bs-toggle="dropdown" aria-expanded="false">{{category.category_name}}</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" onclick="event.preventDefault();"
+                  [ngClass]="headerTab == 'Contact Us' ? 'active' : ''">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+</header>
+
+<div class="wrapper">
+
+
+
+
+</div>
+
+<div>
+  <ngx-spinner type="pacman" bdColor="rgba(255,255,255,.8"
+    template="<img src='assets/images/loader.gif' alt='loader' />">
+  </ngx-spinner>
+  <router-outlet></router-outlet>
+</div>
+
+<footer>
+  <div class="container"> 
+    <div class="top_pannel">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer_box1">   
+            <h2>Main Menu</h2>
+
+            <ul>
+              <li><a href="" onclick="event.preventDefault();" >Home</a></li>
+              <li><a href="" onclick="event.preventDefault();" >About Us</a></li>
+
+              <!-- <li><a href="" onclick="event.preventDefault();" (click)="productOpen()">Products</a></li> -->
+
+              <li><a href="" onclick="event.preventDefault();">Contact </a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer_box1">
+            <h2>Terms & Policy</h2>
+
+            <ul>
+              <li><a target="_blank" [routerLink]="['/terms-conditions']">Terms and Conditions</a>
+              </li>
+              <li><a target="_blank" [routerLink]="['/privacy-policy']">Privacy Policy</a></li>
+              <li><a target="_blank" [routerLink]="['/refund-policy']">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer_box1">
+            <h2>Product</h2>
+
+           
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer_box1">
+            <h2>Contact</h2>
+
+           
+        
+          </div>
+        </div>
+
+        <div class="col-12">
+          <p class="copy">© 2024 JC</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
