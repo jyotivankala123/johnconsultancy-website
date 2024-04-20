@@ -26,45 +26,11 @@
 
         <div class="right_area" >
           <div class="header_profile_secion">
-            <a *ngIf="fullName == ''" href="" onclick="event.preventDefault();" ><i
+            <a href="" onclick="event.preventDefault();" (click)="navigateToLogin()"><i
                 class="fas fa-user"></i>
               Login / Signup</a>
-            <a *ngIf="fullName != ''" href="" onclick="event.preventDefault();"><i class="fas fa-user"></i>
-              {{fullName}}</a>
-            <div class="drop_area" >
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="" onclick="event.preventDefault();"
-                   ><i class="fas fa-user"></i>Profile</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="" onclick="event.preventDefault();"
-                    (click)="navigateManageAddressList()"><img src="assets/images/profile_tab_icon4.svg" alt="" />Manage Delivery Location</a>
-                </li> -->
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="" onclick="event.preventDefault();" (click)="navigateOrderList()"><img
-                      src="assets/images/profile_tab_icon5.svg" alt="" />Order</a>
-                </li> -->
-                <li class="nav-item">
-                  
-                </li>
-                <!-- <li class="nav-item">
-
-                  <a class="nav-link" *ngIf="unReadNotification > 0" href="" onclick="event.preventDefault();"
-                    (click)="navigateNotificationList()"><span
-                      class="notification_dot">{{unReadNotification}}</span><img
-                      src="assets/images/profile_tab_icon7.svg" alt="" />
-                    Notification</a>
-                  <a class="nav-link" *ngIf="unReadNotification == 0" href="" onclick="event.preventDefault();"
-                    (click)="navigateNotificationList()"><img src="assets/images/profile_tab_icon7.svg" alt="" />
-                    Notification</a>
-
-                </li> -->
-                <li class="nav-item">
-                  <a class="nav-link" href="#logout" data-bs-toggle="modal"><i class="fas fa-sign-out"></i>Logout</a>
-                </li>
-              </ul>
-            </div>
+            <!-- <a *ngIf="fullName != ''" href="" onclick="event.preventDefault();"><i class="fas fa-user"></i>
+              {{fullName}}</a> -->
           </div>
 
           <!-- <div *ngIf="fullName != ''" class="header_cart_secion">
