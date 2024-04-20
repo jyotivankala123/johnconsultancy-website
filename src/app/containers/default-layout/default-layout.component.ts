@@ -71,4 +71,9 @@ export class DefaultLayoutComponent implements OnInit {
       this.hideSideMenuStatus2 = !this.hideSideMenuStatus2;
     }
   }
+
+
+  navigateToLogin(){
+    this.router.navigate(['home/login'])
+  }
 }
