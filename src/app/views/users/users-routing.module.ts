@@ -11,7 +11,7 @@ const routes: Routes = [
     title:'Home'
   },
   {
-    path: 'login',
+    path: 'login', 
     component: LoginComponent,
     title:'Login'
   }
