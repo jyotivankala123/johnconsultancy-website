@@ -1403,6 +1403,39 @@ footer .top_pannel {
   color: #fff;
 }
 
+.home_offer_box1_img_area
+{
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.home_offer_section
+{
+  
+  padding: 60px 0;
+}
+
+.home_offer_slider_area
+{
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.home_offer_box1
+{
+  display: block;
+  float: left;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
 .profile_tab .profile_form {
   display: block;
   float: left;
