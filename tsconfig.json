@@ -23,6 +23,8 @@
       "dom"
     ],
     "skipLibCheck": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false
 
   },
   "angularCompilerOptions": {
@@ -36,6 +38,7 @@
     "noImplicitAny": false,
     "noImplicitReturns": false,
     "ivy": false,
-    "enableIvy": false
+    "enableIvy": false,
+    
   }
 }
