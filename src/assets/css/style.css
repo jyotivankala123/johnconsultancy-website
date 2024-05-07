@@ -6417,3 +6417,16 @@ option:hover
 {
   font-size: 18px;
 }
+
+
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-content {
+  width: 1200px; /* Adjust width as needed */
+  text-align: center;
+}

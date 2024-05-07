@@ -9,10 +9,10 @@ export const environment = {
   //  apiURL: 'https://www.kawawamarketapi.acelance.com/',    
   //  imgUrl:'https://www.kawawamarketapi.acelance.com' ,
 
-   apiURL:'https://api.kawawamarket.com/',
-   imgUrl:'https://api.kawawamarket.com',
-  // apiURL: 'http://localhost:3025/', 
-  // imgUrl: 'http://localhost:3025/',
+  //  apiURL:'https://api.kawawamarket.com/',
+  //  imgUrl:'https://api.kawawamarket.com',
+  apiURL: 'http://localhost:4030/api', 
+  imgUrl: 'http://localhost:4030/api',
 
   // socketUrl: 'https://www.kawawadigitalsolution.com:3001/joinToSocket',
   // walletUrl: 'https://www.kawawadigitalsolution.com:3001/',

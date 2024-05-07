@@ -5,7 +5,7 @@ import { UsersRoutingModule } from './users-routing.module';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { FormsModule,ReactiveFormsModule } from '@angular/forms'; // Import FormsModule
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
     CommonModule,
     CarouselModule,
     UsersRoutingModule,
-    FormsModule // Include FormsModule in imports
+    FormsModule, // Include FormsModule in imports,
+    ReactiveFormsModule
   ]
 })
 export class UsersModule { }
