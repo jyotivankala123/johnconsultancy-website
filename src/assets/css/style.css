@@ -1000,6 +1000,17 @@ footer .top_pannel {
   text-align: center;
 }
 
+.subpage_body_heading {
+  float: left;
+  width: 100%;
+  background-color: white;
+  padding: 12px 0;
+  text-align: center;
+  color:#1D3178;
+}
+
+
+
 .subpage_header h2 {
   color: #fff;
   font-size: 25px;
