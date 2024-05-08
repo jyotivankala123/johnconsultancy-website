@@ -6606,20 +6606,21 @@ option:hover
 }
 
 .gallery-frame {
-  border: 2px solid #ddd; /* Add border around the gallery */
-  border-radius: 10px; /* Add border radius for rounded corners */
+  border: 1px solid #ddd; /* Add border around the gallery */
+  border-radius: 5px; /* Add border radius for rounded corners */
   overflow: hidden; /* Ensure the border doesn't overlap with the images */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center; /* Center-align the gallery title */
+  padding: 3px; /* Add padding around the gallery */
 }
 
 .column_OP {
   flex: 1; /* Equal width for each column */
   margin: 5px; /* Add some space between columns */
+  border: 1px solid #ddd; /* Add border around each image */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  overflow: hidden; /* Ensure the border doesn't overlap with the images */
+  padding: 3px; /* Add padding around each image */
 }
 
 .column_OP img {
