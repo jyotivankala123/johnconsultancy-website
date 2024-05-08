@@ -6430,3 +6430,188 @@ option:hover
   width: 1200px; /* Adjust width as needed */
   text-align: center;
 }
+
+/* .subpage_header_about {
+  display: block;
+  float: left;
+  width: 100%;
+  background: #154c79;
+  padding: 12px 0;
+  text-align: center;
+} */
+
+.subpage_header_about h2 {
+  color: #fff;
+  font-size: 25px;
+}
+
+
+.subpage_header_about img {
+  float: left;
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  object-position: center;
+  object-fit: cover;
+  opacity: .5;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+.bg-jobpost {
+  position: relative;
+}
+
+.bg-jobpost:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #0b2a40;
+  content: "";
+}
+
+.daily-job-post {
+  width: 100%;
+  background-color: #0087ff;
+  border-radius: 6px;
+  display: inline-block;
+  height: 190px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .daily-job-post {
+    height: auto;
+  }
+}
+
+.daily-job-post .leftimg {
+  width: 30%;
+  height: 190px;
+  display: block;
+  float: left;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .daily-job-post .leftimg {
+    display: none;
+  }
+}
+
+.daily-job-post .leftimg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-color: transparent #0087ff transparent transparent;
+  border-style: solid;
+  border-width: 0 50px 180px 0;
+}
+
+.daily-job-post .leftimg .imgsize {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 6px 0 0 6px;
+}
+
+.daily-job-post .rightcontent {
+  width: 70%;
+  float: left;
+  padding: 25px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .daily-job-post .rightcontent {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+
+.daily-job-post .rightcontent h2 {
+  margin: 0;
+  font-size: 27px;
+}
+
+.daily-job-post .rightcontent ul.post-listing {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+.daily-job-post .rightcontent ul.post-listing li {
+  width: 32%;
+  display: inline-block;
+  text-align: center;
+  font-family: Oswald, sans-serif;
+}
+
+.daily-job-post .rightcontent ul.post-listing li .counter-value {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .daily-job-post .rightcontent ul.post-listing li .counter-value {
+    font-size: 20px;
+  }
+}
+
+.daily-job-post .rightcontent ul.post-listing li .namepost {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .daily-job-post .rightcontent ul.post-listing li .namepost {
+    font-size: 14px;
+  }
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.row_COM {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column_OP {
+  flex: 1; /* Equal width for each column */
+  margin: 5px; /* Add some space between columns */
+  border: 2px solid #ddd; /* Add border around each column */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  overflow: hidden; /* Ensure the border doesn't overlap with the image */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.column_OP img {
+  display: block; /* Ensure images don't have extra space below */
+  width: 100%; /* Make images fill the width of their container */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
+}
+

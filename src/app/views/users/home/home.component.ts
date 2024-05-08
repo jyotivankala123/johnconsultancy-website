@@ -33,6 +33,9 @@ export class HomeComponent implements OnInit {
   homeAdvertisments:any = [];
   homeAdvertismentsList:any = []; 
 
+  employersServiced:any = 0;
+  candidatesPlaced:any = 0;
+  countriesServiced:any = 0;
 
 
   constructor(private commonService: CommonService,
@@ -42,7 +45,14 @@ export class HomeComponent implements OnInit {
     
   }
 
+  
   ngOnInit(): void {
+
+    setTimeout(() => {
+      this.employersServiced = 300;
+      this.candidatesPlaced = 400;
+      this.countriesServiced = 1500;
+    }, 3000);
    
     $('.my-carousel2').owlCarousel({
       margin: 30,
@@ -93,6 +103,8 @@ export class HomeComponent implements OnInit {
         items: 4
       }
     }
+
+    
   }
 
 
