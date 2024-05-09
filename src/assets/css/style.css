@@ -1483,41 +1483,41 @@ footer .top_pannel {
   color: #fff;
 }
 
-.about_left h2
-{
+.about_left h2 {
   font-size: 35px;
   font-family: 'NexaBold';
 }
-.about_left h2 span
-{
+
+.about_left h2 span {
   color: #0666A9;
 }
-.about_left p
-{
+
+.about_left p {
   font-size: 15px;
   color: #656565;
   margin-top: 20px;
 }
-.about_left ul
-{
+
+.about_left ul {
   margin-top: 20px;
   list-style-type: none;
   font-size: 15px;
   color: #656565;
 }
-.about_left ul li
-{
+
+.about_left ul li {
   position: relative;
   margin-bottom: 12px;
-  padding-left: 30px;
+  padding-left: 40px; /* Adjusted padding for bullet points */
 }
-.about_left ul li::before
-{
+
+.about_left ul li::before {
   content: url(../images/tick.png);
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 90px;
+  top: 90px;
 }
+
 
 .about_right img
 {
@@ -6592,6 +6592,17 @@ option:hover
 }
 
 
+.gallery-frame {
+  width: 800px; /* Adjusted width for better responsiveness */
+  margin: 0 auto; /* Center the gallery horizontally */
+  border: 1px solid #ddd; /* Add border around the gallery */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  overflow: hidden; /* Ensure the border doesn't overlap with the images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  padding: 10px; /* Add padding around the gallery */
+  background-color: #f9f9f9; /* Add a light background color */
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -6599,28 +6610,24 @@ option:hover
 }
 
 .gallery img {
-  width: 200px;
-  height: 200px;
+  width: 150px; /* Adjusted width for smaller images */
+  height: 150px; /* Adjusted height for smaller images */
   object-fit: cover;
   margin: 5px;
-}
-
-.gallery-frame {
-  border: 1px solid #ddd; /* Add border around the gallery */
   border-radius: 5px; /* Add border radius for rounded corners */
-  overflow: hidden; /* Ensure the border doesn't overlap with the images */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-  text-align: center; /* Center-align the gallery title */
-  padding: 3px; /* Add padding around the gallery */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
+.gallery img:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+  z-index: 1; /* Ensure the hovered image appears on top of others */
+}
+
+/* Adjusted column_OP styles */
 .column_OP {
   flex: 1; /* Equal width for each column */
   margin: 5px; /* Add some space between columns */
-  border: 1px solid #ddd; /* Add border around each image */
-  border-radius: 5px; /* Add border radius for rounded corners */
   overflow: hidden; /* Ensure the border doesn't overlap with the images */
-  padding: 3px; /* Add padding around each image */
 }
 
 .column_OP img {
@@ -6628,4 +6635,11 @@ option:hover
   width: 100%; /* Make images fill the width of their container */
   height: auto; /* Maintain aspect ratio */
   cursor: pointer;
+  border-radius: 5px; /* Add border radius for rounded corners */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
+
+.column_OP img:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+}
+
