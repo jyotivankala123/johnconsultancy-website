@@ -111,7 +111,7 @@
               </div>
               <div class="input-box">
                 <select class="form-select" (change)="selectMealType($event)" aria-label="Default select example">
-                  <option selected hidden >Select Meal Type</option>
+                  <option selected hidden >Select Industry Type</option>
                   <option [value]="ml.id" *ngFor="let ml of categoryList">{{ml.category_name | titlecase}}</option>
                 </select>
                 <ng-container *ngIf="formSubmitted && category_id == ''">
