@@ -2,12 +2,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
@@ -16,29 +18,24 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2022",
-    "module": "es2022",
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
     "lib": [
-      "es2022",
+      "ES2022",
       "dom"
     ],
-    "skipLibCheck": true,
-    "strictPropertyInitialization": false,
-    "strictNullChecks": false
-
+    "allowJs": true
   },
   "angularCompilerOptions": {
-    
-    "strictNullChecks" : false,
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
-    "strictPropertyInitialization": false,
     "strictInputAccessModifiers": true,
+    "strictPropertyInitialization": false,
     "strictTemplates": true,
-    "noImplicitAny": false,
-    "noImplicitReturns": false,
-    "ivy": false,
-    "enableIvy": false,
-    
+    "strictNullChecks": false,
+    "noImplicitAny":false,
+    "noImplicitThis": false
+
   }
 }
