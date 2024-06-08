@@ -8,7 +8,6 @@ import { HelperService } from '../../../core/services/Helper/helper.service';
 import { noSpace } from '../../../shared/custom-validators/nospacesvalidator';
 import { NgxSpinnerService } from "ngx-spinner";
 import { Subscription } from 'rxjs';
-import 'jquery'; // Import jQuery before importing Owl Carousel
 
 
 import { OwlOptions } from 'ngx-owl-carousel-o';
