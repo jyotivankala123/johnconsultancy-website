@@ -3544,6 +3544,22 @@ header
   border-radius: 10px;
   border: none !important;
 }
+
+.recuirement
+{
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 8px 4px 11px 8px rgba(9, 7, 131, 0.095);
+  border: none !important;
+  
+}
+.recuirement:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
 .card .heading
 {
   display: flex;
