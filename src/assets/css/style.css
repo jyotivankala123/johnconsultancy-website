@@ -6593,8 +6593,7 @@ option:hover
 
 
 .gallery-frame {
-  width: 800px; /* Adjusted width for better responsiveness */
-  margin: 0 auto; /* Center the gallery horizontally */
+  margin: 1px auto; /* Center the gallery horizontally */
   border: 1px solid #ddd; /* Add border around the gallery */
   border-radius: 10px; /* Add border radius for rounded corners */
   overflow: hidden; /* Ensure the border doesn't overlap with the images */
@@ -6610,8 +6609,8 @@ option:hover
 }
 
 .gallery img {
-  width: 150px; /* Adjusted width for smaller images */
-  height: 150px; /* Adjusted height for smaller images */
+  width: 100px; /* Adjusted width for smaller images */
+  height: 100px; /* Adjusted height for smaller images */
   object-fit: cover;
   margin: 5px;
   border-radius: 5px; /* Add border radius for rounded corners */
@@ -6623,20 +6622,13 @@ option:hover
   z-index: 1; /* Ensure the hovered image appears on top of others */
 }
 
-/* Adjusted column_OP styles */
-.column_OP {
-  flex: 1; /* Equal width for each column */
-  margin: 5px; /* Add some space between columns */
-  overflow: hidden; /* Ensure the border doesn't overlap with the images */
-}
 
 .column_OP img {
-  display: block; /* Ensure images don't have extra space below */
-  width: 100%; /* Make images fill the width of their container */
-  height: auto; /* Maintain aspect ratio */
-  cursor: pointer;
-  border-radius: 5px; /* Add border radius for rounded corners */
-  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  width: 100%;
+  height: auto;
+  padding:20px;
+  transition: transform 0.3s ease; 
+
 }
 
 .column_OP img:hover {
