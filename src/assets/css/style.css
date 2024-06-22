@@ -6609,9 +6609,13 @@ option:hover
 
 
 .gallery-frame {
-  text-align: center;
-  padding: 20px;
-  background-color: #f7f7f7;
+  margin: 1px auto; /* Center the gallery horizontally */
+  border: 1px solid #ddd; /* Add border around the gallery */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  overflow: hidden; /* Ensure the border doesn't overlap with the images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  padding: 10px; /* Add padding around the gallery */
+  background-color: #f9f9f9; /* Add a light background color */
 }
 
 .gallery {
@@ -6621,16 +6625,13 @@ option:hover
   gap: 10px; /* Adjust the gap between images */
 }
 
-.gallery-item {
-  flex: 1 0 15%; /* Each item will take up 15% of the container width */
-  max-width: 15%;
-  margin: 5px; /* Adjust spacing around images */
-  box-sizing: border-box;
-  overflow: hidden;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.gallery img {
+  width: 100px; /* Adjusted width for smaller images */
+  height: 100px; /* Adjusted height for smaller images */
+  object-fit: cover;
+  margin: 5px;
+  border-radius: 5px; /* Add border radius for rounded corners */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
 .gallery-item img {
@@ -6639,16 +6640,13 @@ option:hover
   display: block;
 }
 
-.gallery-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
 
-@media (max-width: 768px) {
-  .gallery-item {
-      flex: 1 0 30%; /* Adjust for smaller screens */
-      max-width: 30%;
-  }
+.column_OP img {
+  width: 100%;
+  height: auto;
+  padding:20px;
+  transition: transform 0.3s ease; 
+
 }
 
 @media (max-width: 480px) {
