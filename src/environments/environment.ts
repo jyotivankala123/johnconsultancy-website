@@ -17,7 +17,7 @@ export const environment = {
   // socketUrl: 'https://www.kawawadigitalsolution.com:3001/joinToSocket',
   // walletUrl: 'https://www.kawawadigitalsolution.com:3001/',
    
-
+   
   // key: 'test_auth_1503b1d15a3ff296f39c625145348f2b',
 
 };
