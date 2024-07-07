@@ -23,3 +23,74 @@ body {
     transform:scale(1.2);
   }
 }
+
+.vision-mission
+{
+	padding-bottom: 80px;
+}
+
+.vision-dtl
+{
+	background: #ffffff;
+	border-left: 8px solid #1f054f;
+	box-shadow: 0px 0px 15px -5px rgb(175 175 175);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 270px;
+}
+
+.vision-dtl h2
+{
+	font-family: mySixthFont;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #000000;
+	text-transform: uppercase;
+}
+.vision-dtl h2 img
+{
+	float: right;
+}
+.vision-dtl p {
+    font-family: myForthFont;
+    font-size: 16px;
+    
+    line-height: 34px;
+    color: #000000;
+	text-align: justify;
+}
+
+.mission-dtl
+{
+	background: #ffffff;
+	border-left: 8px solid #1f054f;
+	box-shadow: 0px 0px 15px -5px rgb(175 175 175);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 270px;
+}
+.mission-dtl h2 img
+{
+	float: right;
+}
+.mission-dtl h2
+{
+	font-family: mySixthFont;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: #000000;
+	text-transform: uppercase;
+}
+.mission-dtl p {
+    font-family: myForthFont;
+    font-size: 16px;
+    line-height: 34px;
+    color: #000000;
+	text-align: justify;
+}
