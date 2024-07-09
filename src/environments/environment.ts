@@ -6,19 +6,14 @@ export const environment = {
   production: false,
 
 
-  //  apiURL: 'https://www.kawawamarketapi.acelance.com/',    
-  //  imgUrl:'https://www.kawawamarketapi.acelance.com' ,
 
-  //  apiURL:'https://api.kawawamarket.com/',
-  //  imgUrl:'https://api.kawawamarket.com',
-  apiURL: 'http://localhost:4030/api', 
-  imgUrl: 'http://localhost:4030/api',
 
-  // socketUrl: 'https://www.kawawadigitalsolution.com:3001/joinToSocket',
-  // walletUrl: 'https://www.kawawadigitalsolution.com:3001/',
-   
-   
-  // key: 'test_auth_1503b1d15a3ff296f39c625145348f2b',
+
+  // apiURL: 'http://localhost:4030/api', 
+  // imgUrl: 'http://localhost:4030/api',
+
+  apiURL: 'https://api.johnconsultancy.in/api', 
+  imgUrl: 'https://api.johnconsultancy.in/api',
 
 };
 
