@@ -23,7 +23,7 @@ const routes: Routes = [
     },
     children: [
       {
-        path: 'home',
+        path: '',
         loadChildren: () => import('./views/users/users.module').then(m => m.UsersModule),
       
       },
