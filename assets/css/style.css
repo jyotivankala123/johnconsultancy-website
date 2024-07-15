@@ -6454,7 +6454,7 @@ option:hover
 }
 
 .form-content {
-  width: 1200px; /* Adjust width as needed */
+  width: 1300px; /* Adjust width as needed */
   text-align: center;
 }
 
@@ -6654,4 +6654,7 @@ option:hover
       flex: 1 0 45%; /* Adjust for mobile screens */
       max-width: 45%;
   }
+}
+.lighten-img {
+  filter: brightness(1.5); /* Adjust the value as needed */
 }
