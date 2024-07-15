@@ -1,8 +1,7 @@
- <body>
+<body>
   <div class="container">
     <div class="cover">
       <div class="front">
-        
         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp" alt="">
         <div class="text">
           <span class="text-1">Unlock your account,<br>unlock possibilities.</span>
@@ -18,34 +17,40 @@
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Enter your name"  formControlName="full_name" required>
+                <input type="text" placeholder="Enter your name" formControlName="full_name" required>
                 <ng-container *ngIf="formSubmitted && rf['full_name'].errors">
-                  <span *ngIf="rf['full_name'].errors['required'] || rf['full_name'].errors['noSpace']" style="color: #ff301e;">*Please enter the full name</span>
-                  </ng-container>
+                  <span *ngIf="rf['full_name'].errors['required'] || rf['full_name'].errors['noSpace']"
+                    style="color: #ff301e;">*Please enter the full name</span>
+                </ng-container>
               </div>
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Enter your phone no."  formControlName="mobile_no" required>
+                <input type="text" placeholder="Enter your phone no." formControlName="mobile_no" required>
                 <ng-container *ngIf="formSubmitted && rf['mobile_no'].errors">
-                  <span *ngIf="rf['mobile_no'].errors['required'] || rf['mobile_no'].errors['noSpace']" style="color: #ff301e;">*Please enter the phone</span>
-                  </ng-container>
+                  <span *ngIf="rf['mobile_no'].errors['required'] || rf['mobile_no'].errors['noSpace']"
+                    style="color: #ff301e;">*Please enter the phone</span>
+                </ng-container>
               </div>
               <div class="input-box">
-                <select class="form-select" (change)="selectMealType($event)" aria-label="Default select example">
-                  <option selected hidden >Select Industry Type</option>
-                  <option [value]="ml.id" *ngFor="let ml of categoryList">{{ml.category_name | titlecase}}</option>
+                <i class="fas fa-building"></i>
+
+                <select class="form-select" (change)="selectMealType($event)">
+
+                  <option selected hidden>Select Industry Type</option>
+                  <option [value]="ml.id" *ngFor="let ml of categoryList">{{ ml.category_name | titlecase }}</option>
                 </select>
                 <ng-container *ngIf="formSubmitted && category_id == ''">
-                  <span  style="color: #ff301e;">*Please select the category</span>
-                  </ng-container>
+                  <span style="color: #ff301e;">*Please select the category</span>
+                </ng-container>
               </div>
+
               <div class="input-box">
-                <input type="file" (change)="fileUpload($event)" required> 
-                <ng-container *ngIf="formSubmitted && user_cv == ''">
-                  <span  style="color: #ff301e;">*Please upload your cv</span>
-                  </ng-container>
+                <i class="fas fa-file"></i>
+                <input type="file" (change)="fileUpload($event)" required>
+                <ng-container *ngIf="formSubmitted && !user_cv">
+                  <span style="color: #ff301e;">*Please upload your CV</span>
+                </ng-container>
               </div>
-          
               <button type="submit" class="btn btn-primary submit_style">Apply Now</button>
             </div>
           </form>
@@ -54,4 +59,3 @@
     </div>
   </div>
 </body>
-
