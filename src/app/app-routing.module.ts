@@ -4,7 +4,7 @@ import { DefaultLayoutComponent } from './containers';
 import { AuthGuardService } from './core/guards/auth-guard.service';
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     redirectTo: 'HomeComponent',
     pathMatch: 'full',
   },
@@ -23,7 +23,7 @@ const routes: Routes = [
     },
     children: [
       {
-        path: '',
+        path: 'home',
         loadChildren: () => import('./views/users/users.module').then(m => m.UsersModule),
       
       },

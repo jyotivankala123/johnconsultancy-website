@@ -6658,3 +6658,25 @@ option:hover
 .lighten-img {
   filter: brightness(1.5); /* Adjust the value as needed */
 }
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px; /* Adjust as needed */
+}
+
+.centered-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin-top: 15px; /* Adjust as needed */
+}
+
+.card p {
+  margin-top: 10px; /* Adjust as needed */
+}
+
