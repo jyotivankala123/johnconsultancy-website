@@ -6680,3 +6680,16 @@ option:hover
   margin-top: 10px; /* Adjust as needed */
 }
 
+
+.responsive-image {
+    width: 100%;
+    max-width: 150px; /* You can adjust this value */
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.gallery-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
